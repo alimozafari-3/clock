@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #282828;
+}
+
+
+.clock {
+    width: 350px;
+    height: 350px;
+    border: 4px solid #191919;
+    background: url(http://samuel-garcia.site/img/clock-sam.png);
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #747474;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.hour {
+    width: 180px;
+    height: 180px;
+
+}
+
+.min {
+    width: 220px;
+    height: 220px;
+}
+
+.sec {
+    width: 250px;
+    height: 250px;
+
+}
+
+.hour,
+.min,
+.sec {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.hour::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    background-color: #8b8b8b;
+    border-radius: 6px 6px 0
+}
+
+.min::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 120px;
+    background-color: #8b8b8b;
+    border-radius: 6px 6px 0
+}
+
+.sec::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: #ebebeb;
+    border-radius: 6px 6px 0
+}
