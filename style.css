@@ -52,13 +52,7 @@ body {
 
 }
 
-.hour,
-.min,
-.sec {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-}
+
 
 .hour::before {
     content: '';
